@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Headphone</title>
+        <style>
+          body {
+     background-image: linear-gradient(to bottom,black,white);
+    background-attachment:fixed;
+}
+#headphone {
+  position: absolute;
+    top:40px;
+    left:180px;
+    transform:translateX(-50%);
+    width:290px;
+    height:278px;
+    border: 20px solid black;
+    border-bottom-color:transparent;
+    border-radius:50%;
+    animation:l 1s infinite alternate;
+}
+@keyframes light{
+  0%{
+  box-shadow: 3px 3px 15px red,-3px -3px 15px rgb(93, 52, 168);
+  }
+  
+  30%{
+  box-shadow: 3px 3px 15px rgb(81, 224, 210),-3px -3px 15px green;
+  }
+  60%{
+  box-shadow: 3px 3px 15px blue,-3px -3px 15px rgb(93, 52, 168);
+  }
+  90%{
+        box-shadow: 3px 3px 15px aqua,-3px -3px 15px yellow;
+
+ }
+ 100%{
+       box-shadow: 3px 3px 15px white,-3px -3px 15px pink;
+
+ }
+}
+.img-circle{
+  height:100px;
+  width:100px;
+  margin:35%;
+  display:block;
+  border-radius:50%;
+  animation: light 3s infinite, l 1s infinite ;
+  animation-delay:3s;
+}
+@keyframes light{
+  0% {
+   transform:rotate(0deg);
+
+    }
+  100% { 
+  transform:rotate(360deg);
+   }
+   }
+#right{
+  position: absolute;
+    top:160px;
+    left:230px;
+    width: 83px;
+    height: 123px;
+    border-radius:10px 69px 69px 10px;
+    background-color:black;
+    transform: rotate(8deg);
+    animation:l 1s infinite alternate;
+    
+  }
+#left{
+  position: absolute;
+  top:160px;
+  left:-10px;
+  width: 83px;
+  height: 123px;
+  background-color:black;
+  border-radius:69px 10px 10px 69px;
+  transform: rotate(-8deg);
+  animation:l 1s infinite alternate;
+}
+
+@keyframes l{
+  0%{
+  box-shadow: 3px 3px 15px red,-3px -3px 15px rgb(93, 52, 168);
+  }
+  
+  30%{
+  box-shadow: 3px 3px 15px rgb(81, 224, 210),-3px -3px 15px green;
+  }
+  60%{
+  box-shadow: 3px 3px 15px blue,-3px -3px 15px rgb(93, 52, 168);
+  }
+  90%{
+        box-shadow: 3px 3px 15px aqua,-3px -3px 15px yellow;
+
+ }
+ 100%{
+       box-shadow: 3px 3px 15px white,-3px -3px 15px pink;
+
+ }
+}
+   #Music,.player{
+    position:absolute;
+    bottom:50px;
+    text-align:center;
+    justify-content:center;
+    width:100%;
+    font-family: 'Rouge Script', cursive;
+    }
+button{
+margin:30%;
+height:50px;
+width:50px;
+background-color:grey;
+border-radius:50%;
+border:none;
+outline:none;
+animation:l 1s infinite alternate;
+}
+.fa-play{
+   color:black;
+}
+.fa-pause{
+   color:black;
+}
+a{
+text-decoration:none;
+    color:black;
+    margin:20%;
+    font-size:30px;
+    bottom:100%;
+    text-shadow: 0 0 2px black ,0px 0px 5px white;
+    
+}
+p{
+text-transform:uppercase ;
+font-size:20px;
+    text-shadow: 0 0 2px black ,0px 0px 5px white;
+}
+
+        </style>
+        <script>
+alert("follow me on linkedin for more codes...(udit nayyar)");
+function udit(){
+        var udit = document.getElementById('udit')  
+   udit.paused?(udit.play()):(udit.pause());
+   ll.classList.toggle("fa-play");
+   ll.classList.toggle("fa-pause");
+    }
+
+        </script>
+         <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet"> 
+   
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    </head>
+    <body>
+        <div id="headphone">
+         <img alt="" class="img-circle" src="https://media-exp1.licdn.com/dms/image/C4E03AQEdb9uJqs9VYA/profile-displayphoto-shrink_800_800/0/1615280573089?e=1622678400&v=beta&t=sO35OH3xTK8RNmsEaM4MytL666iIPNlG1PO1AXNHLmQ">
+      <div id="right"></div>
+      <div id="left"></div>
+    </div>
+    <div id="Music"> 
+                <button onclick="udit()"> 
+<i id="ll" class='fas fa-play' style='font-size:24px'></i></button>
+        <audio id="udit">
+    <source  src="https://dl.dropbox.com/s/epi7cjv93a7vv8k/y2mate.com%20-%20I%20Want%20You%20To%20Know%20%28%20Hella%20%C3%97%20Pegato%20Remix%29%20_%20Nh%E1%BA%A1c%20g%C3%A2y%20nghi%E1%BB%87n%20tr%C3%AAn%20Tiktok%20Trung%20Qu%E1%BB%91c%20_%20Douyin%20Music_9wCc4hs_2iY.mp3?dl=1">
+    </div>
+    <div class="player">
+    <p>☆♪☆
+                </p>
+     <a href="https://www.linkedin.com/in/udit-nayyar-556935205/">linkedin</a>
+</div>
+    </body>
+</html>
